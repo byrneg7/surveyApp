@@ -6,3 +6,5 @@ module.exports = {
     mongoURI: process.env.MONGO_URI,
     cookieKey: process.env.COOKIE_KEY
 };
+
+//remember to make admin user in db on mlabs
