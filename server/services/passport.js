@@ -29,7 +29,7 @@ passport.use(
                 .then((existingUser) => {
                     if (existingUser) {
                         console.log('User already exists!');
-                        done(null, false); //pass error cases into done, either null (no error), or user
+                        done(null, existingUser); //pass error cases into done, either null (no error), or user
                     } else {
                         new User({ googleId: profile.id }).save() // -U-ser being saved
                             .then(user => done(null, user)); //-u-seris the finished document after saving - might have had some changes made
