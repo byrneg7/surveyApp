@@ -15,5 +15,5 @@ ReactDOM.render(
     document.querySelector("#root")
 );
 
-console.log('Stripe key is', process.env.GOOGLE_CLIENT_ID);//REACT_APP_STRIPE_KEY
+console.log('Stripe key is', process.env.REACT_APP_STRIPE_KEY);
 console.log('Environment is', process.env.NODE_ENV);
